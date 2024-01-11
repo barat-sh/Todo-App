@@ -30,12 +30,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  todo: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "TodoModel",
-    },
-  ],
+  todo: [],
 });
 
 export const UserModel = mongoose.model("UserModel", userSchema);
